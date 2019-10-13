@@ -36,7 +36,7 @@ describe('GET /books', () => {
         let sorted = true;
 
         let i = 0;
-        while(i < res.body.lenth -1) {
+        while(i < res.body.length -1) {
           const bookAtI = res.body[i];
           const bookAtIPlus1 = res.body[i + 1];
           if(bookAtIPlus1.title < bookAtI.title) {
